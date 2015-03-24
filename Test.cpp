@@ -3,7 +3,7 @@
 
 Test::Test(void)
 {
-  cout<<"0"<<endl;
+  
 }
 
 
