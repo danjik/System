@@ -64,11 +64,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Test.h" />
+    <ClInclude Include="ELF.h" />
+    <ClInclude Include="Noyau.h" />
+    <ClInclude Include="Page.h" />
+    <ClInclude Include="Processus.h" />
+    <ClInclude Include="Segment.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ELF.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Noyau.cpp" />
+    <ClCompile Include="Page.cpp" />
+    <ClCompile Include="Processus.cpp" />
+    <ClCompile Include="Segment.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
