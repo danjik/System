@@ -2,9 +2,7 @@
 
 using namespace std;
 
-int main()
-{
-	cout<<"QEQSDQSEEEESQ"<<endl;
-    cout << "Gros tarba!" << endl;
+int main(){
+    cout<<"Toto"<<endl;
     return 0;
 }
