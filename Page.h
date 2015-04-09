@@ -21,6 +21,8 @@ public:
 	bool getExecution(){return execution;};
 	void setExecution(bool v){execution=v;};
 	static int getTaillePage(){return taillePage;};
+	int getOctet();
+	int getOffset();
 	void afficher();
 	Page(int adrDep);
 	~Page(void);
