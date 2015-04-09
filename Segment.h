@@ -1,6 +1,9 @@
+#ifndef __SEGMENT__
+#define __SEGMENT__
 #include <string>
 #include "Page.h"
 #include <vector>
+#include <iostream>
 using namespace std;
 class Segment
 {
@@ -8,7 +11,7 @@ class Segment
 	int taille;
 	bool forward;//True si c'est +, false si c'est -
 	bool resizable;//Peut etre agrandi dynamiquement
-	vector<Page> vecPages;//"Les segments sont divisés en pages de taille fixes"
+	vector<Page*> vecPages;//"Les segments sont divisés en pages de taille fixes"
 public:
 	/*
 	** CONSTRUCTEURS
@@ -26,9 +29,13 @@ public:
 	bool getResizable(){return resizable;};
 	void setAdresse(string adr);
 	int getAdresse(){return adresse;}; 
+	vector<Page*> getPages(){return vecPages;};
+	void setPages(vector<Page*> toSet){vecPages=toSet;};
 	/*
 	** FONCTIONNALITES
 	*/
 	bool adresseValide(int uneAdr);
+	void afficher();
 };
 
+#endif
