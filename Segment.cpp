@@ -9,12 +9,16 @@
 **	- false = L'adresse n'est pas valide
 **	- true = L'adresse est valide
 */
-bool Segment::adresseValide(string unAd){
+bool Segment::adresseValide(int unAd){
 	return true;
 }
 
-Segment::Segment(string ad,int t, bool f, bool r)
+Segment::Segment(int ad,int t, bool f, bool r)
 {
+	adresse=ad;
+	taille=t;
+	forward=f;
+	resizable=r;
 
 }
 
