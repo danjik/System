@@ -5,11 +5,13 @@ Noyau::Noyau(void)
 {
 }
 bool Noyau::tuerProcessus(int PID){
-	
+	return true;
 }
 
-bool Noyau::creerProcessus(){
+int Noyau::creerProcessus(){
+	int toSave=lastPIDGiven;
 	lastPIDGiven++;
+	return toSave;
 }
 Noyau::~Noyau(void)
 {

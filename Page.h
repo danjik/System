@@ -1,8 +1,11 @@
+#ifndef __PAGE__
+#define __PAGE__
 #include <string>
+#include <iostream>
 using namespace std;
 class Page
 {
-	static const int taillePage=4;
+	static const int taillePage=4000;
 	int adrDepart;
 	bool ecriture;
 	bool lecture;
@@ -17,7 +20,10 @@ public:
 	void setLecture(bool v){lecture=v;};
 	bool getExecution(){return execution;};
 	void setExecution(bool v){execution=v;};
-	Page(void);
+	static int getTaillePage(){return taillePage;};
+	void afficher();
+	Page(int adrDep);
 	~Page(void);
 };
+#endif
 

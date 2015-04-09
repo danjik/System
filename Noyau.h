@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __NOYAU__
+#define __NOYAU__
 class Noyau
 {
 	static int lastPIDGiven;
@@ -9,6 +10,6 @@ public:
 	** FONCTIONNALITES
 	*/
 	bool tuerProcessus(int PID);
-	bool creerProcessus();
+	static int creerProcessus();//Retourne un PID et incrémente
 };
-
+#endif
