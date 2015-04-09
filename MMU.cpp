@@ -2,5 +2,5 @@
 
 
 MMU::MMU(){
-    this.tlb = new TLB();
+    tlb = new TLB();
 }

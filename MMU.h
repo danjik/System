@@ -2,7 +2,7 @@
 class MMU{
 
 private:
-    TLB tlb;
+    TLB *tlb;
 
 public:
     MMU();
