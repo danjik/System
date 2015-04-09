@@ -10,6 +10,7 @@ class Processus
 {
 	int pid;
 	vector<int> espaceAdressage;
+	Segment code(int,int, true,false);
 	Segment * code;
 	Segment * tas;
 	Segment * pile;
